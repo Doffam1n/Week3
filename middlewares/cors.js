@@ -10,7 +10,6 @@ function cors(req, res, next) {
     if (allowedCors.includes(origin)) { // Если это наш друг
         res.header('Access-Control-Allow-Origin', origin);
     }
-    
     next();
 }
 
